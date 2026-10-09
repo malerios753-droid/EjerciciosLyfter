@@ -7,3 +7,4 @@ Historial de Cambios del Repositorio
 2. Commit: Agregando ejercicios pasados organizados por modulos
    - Qué cambió: Se subieron las carpetas IT_Essentials, Programming_Logic y Python_Basics.
    - Por qué se hizo: Para consolidar y organizar todos los módulos de ejercicios previos en el repositorio remoto.
+# Corrección de formato en el historial
