@@ -4,8 +4,10 @@ class Product:
         self.price = price
         self.quantity = quantity
 
-    def total_priece(self) -> float:
+    
+    def total_price(self) -> float:
         return self.price * self.quantity
+
 
 class Inventory:
     def __init__(self):
@@ -19,8 +21,8 @@ class Inventory:
             print(f"Producto: {product.name} | Precio: ${product.price} | Cantidad: {product.quantity}")
 
     def calculate_total_value_of_inventory(self) -> float:
-        return sum(product.total_priece() for product in self.products)
-    
+        return sum(product.total_price() for product in self.products)
+
 
 
 inventory = Inventory()
