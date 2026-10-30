@@ -16,7 +16,7 @@ def log_execution(func):
     return wrapper
 
 
-# --- PRUEBA DEL EJERCICIO 1 ---
+# -- PRUEBA DEL EJERCICIO 1 ---
 
 @log_execution
 def add_numbers(a,b, c=0):
