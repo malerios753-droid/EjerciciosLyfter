@@ -89,11 +89,28 @@ print("Agregando por la izquierda: A")
 deque.push_left(DoubleNode("A"))
 deque.print_structure()
 
-print("Haciendo POP_LEFT (quita A):")
-deque.pop_left()
+print("\nHaciendo POP_LEFT (quita A):")
+removed_left = deque.pop_left()
+print(f"Nodo removido por la izquierda: {removed_left.data}")
 deque.print_structure()
 
-print("Haciendo POP_RIGHT (quita C):")
+print("\nHaciendo POP_RIGHT (quita C):")
+removed_right = deque.pop_right()
+print(f"Nodo removido por la derecha: {removed_right.data}")
+deque.print_structure()
+
+print("\n--- Probando caso límite: Un solo elemento ---")
+
+last_node = deque.pop_left()
+print(f"Último nodo removido: {last_node.data}")
+deque.print_structure()
+
+print("\n--- Probando caso límite: Deque vacío ---")
+deque.pop_left() 
 deque.pop_right()
+
+deque.push_left(DoubleNode("Único"))
+single_right = deque.pop_right()
+print(f"Nodo único removido con pop_right: {single_right.data}")
 deque.print_structure()
     

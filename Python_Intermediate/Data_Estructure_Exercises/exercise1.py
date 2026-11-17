@@ -31,14 +31,14 @@ class Stack:
 
 
 print("=== PRUEBA STACK ===")
-plato1 = Node("Plato 1 (Abajo)")
-plato2 = Node("Plato 2 (Medio)")
-plato3 = Node("Plato 3 (Arriba)")
+plate1 = Node("Plato 1 (Abajo)")
+plate2 = Node("Plato 2 (Medio)")
+plate3 = Node("Plato 3 (Arriba)")
 
 stack = Stack()
-stack.push(plato1)
-stack.push(plato2)
-stack.push(plato3)
+stack.push(plate1)
+stack.push(plate2)
+stack.push(plate3)
 
 print("Estado de la pila")
 stack.print_structure()
@@ -48,5 +48,9 @@ removed = stack.pop()
 print(f"Nodo removido: {removed.data}")
 
 print("Estado final de la pila")
-stack.print_structure
+stack.print_structure()
+
+print("\n--- Probando caso límite: Stack vacío ---")
+empty_stack = Stack()
+empty_stack.pop()
 
